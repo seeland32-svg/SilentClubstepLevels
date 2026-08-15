@@ -1,0 +1,74 @@
+.nav {
+    display: flex;
+    column-gap: 1.25rem;
+    align-items: center;
+}
+.nav .nav__tab {
+    padding-top: 2px;
+    border-bottom: 3px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    padding-inline: 0.2rem;
+    transition: border-color 100ms ease;
+    white-space: nowrap;
+    width: fit-content;
+    flex-shrink: 0;
+}
+.nav .nav__tab.router-link-active {
+    border-color: var(--color-on-primary);
+}
+.nav .nav__tab:hover {
+    border-color: var(--color-on-primary);
+}
+.nav .nav__actions {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+.nav .nav__actions .nav__cta {
+    margin-left: 0.75rem;
+}
+.nav .nav__actions .nav__icon {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 100ms ease;
+    flex-shrink: 0;
+}
+.nav .nav__actions .nav__icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.nav .nav__actions .nav__icon img {
+    height: 1.5rem;
+    transition: filter 100ms ease;
+}
+header.dark .nav .nav__actions .nav__icon img {
+    filter: invert(1);
+}
+header.dark .nav .nav__actions .nav__icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.nav .nav__actions .nav__cta {
+    padding: 0.7rem 1rem;
+    background-color: var(--color-on-primary);
+    color: var(--color-primary);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 0.5rem 0 rgba(0, 0, 102, 0.5);
+    transition: transform 100ms ease;
+    white-space: nowrap;
+    line-height: 1;
+    flex-shrink: 0;
+}
+.nav .nav__actions .nav__cta:hover:not(:active) {
+    transform: translateY(-2px);
+}
