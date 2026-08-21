@@ -86,7 +86,7 @@ export default {
                     <div class="og">
                         <p class="type-label-md">Website layout made by <a href="https://tsl.pages.dev/" target="_blank">TheShittyList</a></p>
                     </div>
-                    <h3><a href=""_blank">Full List (including runs)</a></h3>
+                    <h3><a href="=target"_blank">Full List (including runs)</a></h3>
                     <template v-if="editors">
                         <h3>List Editors</h3>
                         <ol class="editors">
